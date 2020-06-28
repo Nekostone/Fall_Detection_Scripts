@@ -26,6 +26,3 @@ for i in range(2):
             print("Processing file {0}...".format(to_compare))
 
             subprocess.call('python3 {0} --input_folder "{1}" --input_filename "{2}" --output_folder "{3}"'.format(prog_dir, input_folder[i], to_compare, output_folder[i]), shell=True)
-            # subprocess.call([prog_dir, "--input_folder", input_folder[i], "--input_filename", to_compare, "--output_folder", output_folder[i]])
-
-# print(len(os.listdir(output_folder_fall)))
